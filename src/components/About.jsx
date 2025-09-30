@@ -16,7 +16,7 @@ function About() {
         />
       ) : (
         <video autoPlay muted loop playsInline className="video-bg">
-          <source src="/videos/fondomotion.mp4" type="video/mp4" />
+          <source src="/videos/fondomotion_compressed.mp4" type="video/mp4" />
           Tu navegador no soporta video HTML5.
         </video>
       )}
