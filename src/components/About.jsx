@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/about.css';
 import fotoMia from '../img/Foto_mia.jpg';
 import fondo from '../img/telefono.jpg'; // imagen de fondo para móviles
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About() {
   const isMobile = window.innerWidth <= 768;
@@ -36,11 +37,21 @@ function About() {
             adaptándome a los retos.
           </p>
           <div className="about-social">
-            <a href="https://github.com/npazzety" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
+            <a
+              href="https://github.com/npazzety"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <FaGithub size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/nelson-leonardo-izagurrre-pazzety-194252159?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/nelson-leonardo-izagurrre-pazzety-194252159?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <FaLinkedin size={28} />
             </a>
           </div>
         </div>
