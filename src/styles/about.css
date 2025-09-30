@@ -1,0 +1,240 @@
+
+/* === VIDEO DE FONDO GLOBAL === */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(0.6) saturate(1.2);
+}
+
+/* === HEADER === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(15, 12, 26, 0.85);
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+/* === SECCIÓN ABOUT === */
+.about {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 100px;
+  overflow: visible;
+}
+
+/* === TARJETA DE INFORMACIÓN === */
+.about-card {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  background: rgba(44, 34, 66, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem 2rem;
+  max-width: 950px;
+  width: 100%;
+  align-items: center;
+  gap: 2.5rem;
+  overflow: auto;
+}
+
+/* === FOTO PERSONAL === */
+.about-img {
+  width: 220px;
+  height: 280px;
+  background: #221a36;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === INFORMACIÓN PERSONAL === */
+.about-info {
+  flex: 1;
+  color: #fff;
+}
+
+.about-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d18cff;
+  margin-bottom: 0.2em;
+}
+
+.about-title {
+  font-size: 1.3rem;
+  color: #b48cff;
+  margin-bottom: 1.2em;
+}
+
+.about-desc {
+  font-size: 1.1rem;
+  color: #e0d6f7;
+  margin-bottom: 1.5em;
+}
+
+/* === REDES SOCIALES === */
+.about-social {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.about-social a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.2s, transform 0.2s;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.about-social a:hover {
+  color: #d18cff;
+  transform: scale(1.2) rotate(-8deg);
+}
+
+/* === SECCIÓN SKILLS === */
+.skills {
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #d18cff;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.skill-item {
+  background: rgba(44, 34, 66, 0.7);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #e0d6f7;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1000px) {
+  .about-card {
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .about-img {
+    width: 160px;
+    height: 200px;
+  }
+
+  .about-name {
+    font-size: 2rem;
+  }
+}
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(0.6) saturate(1.2);
+}
+
+.image-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  filter: brightness(0.6) saturate(1.2);
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(0.6) saturate(1.2);
+  display: block;
+}
+
+.image-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/telefono.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  filter: brightness(0.6) saturate(1.2);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .video-bg {
+    display: none;
+  }
+
+  .image-bg {
+    display: block;
+  }
+}

@@ -1,0 +1,193 @@
+/*
+ * Estos estilos son para la vista de detalle de cada proyecto.
+ * Pueden ser importados en cualquier componente de detalle de proyecto.
+ */
+
+.projects-container.detail-view {
+    padding: 40px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    margin-top: 80px; /* <-- Evita que choque con el header */
+}
+
+.project-detail-content {
+    background-color: #3b2857;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Títulos más grandes y en negrita */
+.project-detail-content h2 {
+    font-weight: bold;
+    font-size: 2.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.project-detail-content h3 {
+    font-weight: bold;
+    font-size: 2.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.project-detail-content h4 {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Enunciados de módulos en negrita */
+.project-detail-content ul li {
+    font-weight: bold;
+}
+
+/* Imagen principal */
+.project-detail-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la lista de tecnologías */
+.technology-list {
+    list-style-type: disc; /* Usar viñetas */
+    margin-left: 20px;
+    padding: 0;
+}
+
+.technology-list li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Estilos para las imágenes de los anexos (aumentado el tamaño) */
+.annex-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.annex-images img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interacción de las imágenes */
+.annex-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Estilos para los enlaces de repositorio */
+.project-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.project-links-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #5a4087;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: #7b62a6;
+    transform: translateY(-5px);
+}
+
+/* ... (el resto de tus estilos) ... */
+
+.project-detail-image.logo-reconecta {
+    max-width: 250px; /* Tamaño del logo ajustado */
+    height: auto;
+}
+
+.annex-images {
+    display: flex; /* Se mantiene flex para la alineación */
+    flex-direction: column; /* Cambia a una dirección de columna para apilar imágenes */
+    gap: 20px; /* Agrega espacio entre las imágenes */
+    align-items: center; /* Centra las imágenes horizontalmente */
+}
+
+.annex-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (el resto de tus estilos) ... */
+
+.logo-reconecta {
+    max-width: 250px;
+    height: auto;
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin-left: auto; /* Centra el bloque de la imagen horizontalmente */
+    margin-right: auto;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* ... (el resto de tus estilos) ... */
+
+.logo-reconecta {
+    max-width: 250px;
+    height: auto;
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto 20px auto; /* Centra el bloque de la imagen horizontalmente y agrega espacio abajo */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
