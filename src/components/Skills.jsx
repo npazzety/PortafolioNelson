@@ -9,6 +9,8 @@ import nodejs from '../img/nodejs.png';
 import sping from '../img/sping.png';
 import mysql from '../img/mysql.png';
 import numpy from '../img/numpy.png';
+import react from '../img/react.png';
+import laravel from '../img/laravel.png';
 
 function Skills() {
   return (
@@ -34,6 +36,11 @@ function Skills() {
               <span>JavaScript</span>
               <div className="skill-bar"><div className="fill" style={{ width: '60%' }}></div></div>
             </div>
+              <div className="skill-item">
+              <img src={react} alt="react" />
+              <span>React</span>
+              <div className="skill-bar"><div className="fill" style={{ width: '40%' }}></div></div>
+            </div>
           </div>
         </div>
 
@@ -48,6 +55,11 @@ function Skills() {
             <div className="skill-item">
               <img src={sping} alt="Spring Boot" />
               <span>Spring Boot</span>
+              <div className="skill-bar"><div className="fill" style={{ width: '40%' }}></div></div>
+            </div>
+            <div className="skill-item">
+              <img src={laravel} alt="Spring Boot" />
+              <span>Laravel</span>
               <div className="skill-bar"><div className="fill" style={{ width: '40%' }}></div></div>
             </div>
           </div>
